@@ -6,8 +6,8 @@
       <button
           v-for="value in option.buttons " :key="value"
           class="option option-left"
-          :class=" options[option.category] === value && 'option-active'"
-          @click="options[option.category]=value">
+          :class=" $options[option.category] === value && 'option-active'"
+          @click=" $options[option.category] = value">
         {{ value }}
 
       </button>
